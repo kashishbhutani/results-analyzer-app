@@ -4,7 +4,7 @@ class Api::V1::ResultsDataController < ApplicationController
     result_data = ResultsData.new(result_data_params)
 
     if result_data.save
-      render json: result_data
+      render json: result_data, status: 201
     else
       render json: { error: 'Unable To Add Results Data' }, status: 400
     end
