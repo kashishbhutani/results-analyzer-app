@@ -10,13 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_17_194732) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_18_111245) do
   create_table "daily_result_stats", force: :cascade do |t|
     t.string "date"
     t.string "subject"
     t.float "daily_low"
     t.float "daily_high"
     t.integer "result_count"
+  end
+
+  create_table "monthly_averages", force: :cascade do |t|
+    t.string "date"
+    t.string "subject"
+    t.float "monthly_avg_low"
+    t.float "monthly_avg_high"
+    t.integer "monthly_result_count_used"
   end
 
   create_table "results_data", force: :cascade do |t|

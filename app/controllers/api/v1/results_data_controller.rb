@@ -17,6 +17,13 @@ class Api::V1::ResultsDataController < ApplicationController
     render json: daily_result_stats
   end
 
+  # GET /api/v1/monthly_average_result_stats
+  def monthly_average_result_stats
+    monthly_average_result_stats = MonthlyAverage.all
+
+    render json: monthly_average_result_stats
+  end
+
   private
 
   def result_data_params

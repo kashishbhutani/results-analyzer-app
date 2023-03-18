@@ -5,5 +5,5 @@ every :day, at: '6:00 PM' do
 end
 
 every :monday, at: '6:00 PM' do
-  runner 'ResultsAggregationService.monthly_result_stats' if Time.now.week_of_month.eql?(3)
+  runner 'ResultsAggregationService.monthly_average_result_stats' if Time.now.week_of_month.eql?(3)
 end
