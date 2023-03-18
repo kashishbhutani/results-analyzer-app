@@ -21,7 +21,7 @@ RSpec.describe 'ResultsData', type: :request do
       # check the value of the returned response hash
       expect(json[:subject]).to eq('Science')
       expect(json[:marks]).to eq(85.83)
-      expect(json[:timestamp]).to eq('2022-04-18 17:47:27.678')
+      expect(json[:timestamp]).to eq('2022-04-18T17:47:27.678Z')
 
       # 1 new results data record is created
       expect(ResultsData.count).to eq(1)
