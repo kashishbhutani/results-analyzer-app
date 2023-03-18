@@ -24,3 +24,13 @@
 * How to run the test suite - rspec
 
 * How to run the server - rails s
+
+* How to write CronJob into CronTab - whenever --update-crontab
+
+* How to list CronJobs present in CronTab -  crontab -l
+
+* How to remove CronJob from CronTab -  crontab -r
+
+* How to run CronJob directly without updating in CronTab 
+  - bundle exec bin/rails runner -e development 'ResultsAggregationService.daily_result_stats'
+  - bundle exec bin/rails runner -e development 'ResultsAggregationService.monthly_average_result_stats'
