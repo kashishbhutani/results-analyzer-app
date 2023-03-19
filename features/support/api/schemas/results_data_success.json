@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "subject",
+    "marks",
+    "timestamp"
+  ],
+  "properties": {
+    "id": { "type" : "integer" },
+    "subject": { "type" : "string" },
+    "marks": { "type" : "float" },
+    "timestamp": { "type" : "string" }
+  }
+}

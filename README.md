@@ -19,11 +19,15 @@
 
 * System Dependencies - bundle install
 
-* Database Creation - rails db:setup
+* Database Creation - rails db:setup && rails db:migrate
 
-* How to run the test suite - rspec
+* How to run the rspec test suite - rspec
+
+* How to run the cucumber test suite - cucumber or bundle exec cucumber
 
 * How to run the server - rails s
+
+* How to run the console - rails c
 
 * How to write CronJob into CronTab - whenever --update-crontab
 

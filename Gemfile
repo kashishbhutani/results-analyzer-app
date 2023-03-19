@@ -21,6 +21,15 @@ gem 'whenever', require: false
 # Use week_of_month gem for finding week of the month easily
 gem 'week_of_month'
 
+# Use cucumber gem for scenario based testing
+gem 'cucumber'
+
+# Use rest client gem for calling API
+gem 'rest-client'
+
+# Use json schema gem for validating API response
+gem 'json-schema'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
@@ -46,8 +55,8 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec'
   gem 'rspec-rails'
 end
 
