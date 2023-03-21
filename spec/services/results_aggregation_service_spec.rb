@@ -51,7 +51,7 @@ RSpec.describe ResultsAggregationService do
     end
 
     it "should not calculate the monthly average data if there's no daily results stats data present" do
-      # Deleting all the results_data records
+      # Deleting all the Daily Result Stats records
       DailyResultStat.delete_all
 
       result = ResultsAggregationService.monthly_average_result_stats
