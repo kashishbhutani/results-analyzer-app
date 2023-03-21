@@ -59,5 +59,6 @@ RSpec.describe ResultsAggregationService do
       expect(result).to be_nil
       expect(MonthlyAverage.count).to eq(0)
     end
+    # Can add more expectations for limit check, etc.
   end
 end

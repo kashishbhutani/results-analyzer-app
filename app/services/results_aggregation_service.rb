@@ -54,6 +54,7 @@ class ResultsAggregationService
     end
 
     def process_monthly_results_data(subject, data, min_date)
+      # Need some condition to prevent infinite loop as it's a recursive function
       if monthly_result_count_satisfied?(data)
         create_monthly_average_data(data, subject)
       else
